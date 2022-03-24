@@ -1,0 +1,642 @@
+/**
+  StAuth10244: I Nguyen Duc Long, 000837437 certify that this material is my original work. 
+    No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
+*/
+/**============================================== Part A: Caledonia Animal Hospital.  ===============================-*/
+/**============================================== HANDLING FOR NAVIGATION MENU ===============================================*/
+body {
+  margin: 0px 0 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden; }
+  body header.gradient {
+    background-image: -webkit-linear-gradient(90deg, #e3e3e3 0%, #28a745 86%, #ffffff00 100%); }
+  body header.gradient2 {
+    background-image: -webkit-linear-gradient(90deg, #e3e3e3 0%, #28a745 20%, #ffffff00 100%); }
+  body header {
+    background-image: -webkit-linear-gradient(90deg, #e3e3e3 0%, #28a745 77%, #ffffff00 100%); }
+    body header .navbar-caledonia {
+      background-color: #28a745;
+      color: white; }
+      body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia {
+        color: white; }
+      body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia {
+        color: rgba(0, 0, 0, 0.55);
+        border-color: white;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem; }
+        body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia span {
+          color: white;
+          width: 1.5em;
+          font-size: calc(1.3rem + .6vw);
+          margin-top: 1rem; }
+      body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia .nav-link-caledonia {
+        color: white; }
+    body header .caledonia-menu {
+      background-color: transparent;
+      color: black; }
+      body header .caledonia-menu .container-fluid-caledonia {
+        align-items: center !important;
+        justify-content: center !important; }
+        body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia {
+          color: black; }
+        body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia {
+          color: white;
+          border-color: black;
+          width: 30%;
+          background-color: #e3e3e3;
+          border-radius: 1rem 1em 0rem 0;
+          border: 1px solid #e3e3e3; }
+          body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia span {
+            color: black;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: .4rem; }
+        body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia {
+          text-align: center; }
+          body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li:nth-child(1) .nav-link-caledonia {
+            color: #0d6efd; }
+          body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .nav-link-caledonia-select {
+            color: #28a745 !important; }
+          body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .nav-link-caledonia {
+            color: black;
+            padding-right: .5rem;
+            padding-left: .5rem; }
+          body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia-show {
+            display: block !important; }
+          body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+            min-width: 19.3rem;
+            display: none;
+            padding: .5rem 0;
+            font-size: 1rem;
+            text-align: left;
+            list-style: none;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: .25rem;
+            background-color: #6c757d; }
+            body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+              color: white;
+              display: block;
+              width: 100%;
+              padding: .25rem 2rem;
+              clear: both;
+              text-align: inherit;
+              text-decoration: none;
+              white-space: nowrap;
+              background-color: transparent;
+              border: 0;
+              font-weight: bold;
+              padding-right: 0 !important; }
+    body header .navbar-caledonia, body header .caledonia-menu {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: .5rem;
+      padding-bottom: .5rem; }
+      body header .navbar-caledonia .container-fluid-caledonia, body header .caledonia-menu .container-fluid-caledonia {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between; }
+        body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia, body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia {
+          padding-top: .3125rem;
+          padding-bottom: .3125rem;
+          margin-right: .6rem;
+          font-size: 1.25rem;
+          text-decoration: none;
+          white-space: nowrap;
+          font-weight: bold; }
+          body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg, body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg {
+            display: none; }
+          body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm, body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm {
+            display: block; }
+        body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia:focus, body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia:focus {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem; }
+        body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia:hover, body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia:hover {
+          text-decoration: none; }
+        body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia, body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia {
+          padding: .25rem .75rem;
+          font-size: 1.25rem;
+          line-height: 1;
+          transition: box-shadow .15s ease-in-out; }
+          body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia span, body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia span {
+            display: inline-block;
+            height: 1.5em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            font-weight: bold;
+            padding-bottom: 0;
+            margin-bottom: 0; }
+        body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia {
+          align-items: center;
+          width: 100%; }
+          body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none; }
+            body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia .nav-link-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia .nav-link-caledonia {
+              display: block;
+              padding: .5rem .5rem;
+              text-decoration: none;
+              transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+              font-weight: bold; }
+        body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia:not(.show-caledonia), body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia:not(.show-caledonia) {
+          display: none; }
+    body header hr.hrfirst, body header hr.hrsecond {
+      display: none; }
+
+@media (min-width: 768px) {
+  body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia .nav-link-caledonia {
+    padding: .5rem 2rem; } }
+    /**======  browser window is less than 720px in width, The navigation menu should alter itself to be optimized for mobile ======*/
+@media (min-width: 720px) {
+  body header {
+    background-image: -webkit-linear-gradient(90deg, #e3e3e3 0%, #28a745 91%, #ffffff00 100%) !important; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia {
+      align-items: center;
+      justify-content: center; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia {
+      background-color: #e3e3e3;
+      border-radius: 50rem;
+      border: 1px solid #e3e3e3; }
+    body header .navbar-caledonia, body header .caledonia-menu {
+      flex-wrap: nowrap;
+      justify-content: flex-start; }
+      body header .navbar-caledonia .container-fluid-caledonia .navbar-toggler-caledonia, body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia {
+        display: none; }
+      body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia {
+        display: flex !important; }
+        body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia {
+          flex-direction: row; }
+          body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li {
+            position: relative; }
+            body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .nav-link-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .nav-link-caledonia {
+              padding-right: .5rem;
+              padding-left: .5rem; }
+            body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia-show, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia-show {
+              display: block !important; }
+            body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+              left: -190px;
+              top: 40px;
+              min-width: 19.2rem;
+              display: none;
+              position: absolute;
+              z-index: 2;
+              padding: .5rem 0;
+              margin: .125rem 0 0 1rem;
+              font-size: 1rem;
+              text-align: left;
+              list-style: none;
+              background-clip: padding-box;
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              border-radius: .25rem;
+              background-color: #6c757d; }
+              body header .navbar-caledonia .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a, body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+                color: white;
+                display: block;
+                width: 100%;
+                padding: .25rem 2rem;
+                clear: both;
+                text-align: inherit;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+                font-weight: bold;
+                padding-right: 0 !important; }
+    body header hr.hrfirst, body header hr.hrsecond {
+      display: block;
+      color: #6c757d !important; }
+    body header hr.hrfirst {
+      margin: 1rem 3rem 0px 3rem; }
+    body header hr.hrsecond {
+      margin: -.4rem 3rem 0px 3rem; } }
+@media (max-width: 719px) {
+  body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg {
+    display: block; }
+  body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm {
+    display: none; }
+  body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia {
+    width: 45%; }
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia {
+    width: 50%;
+    transform: translate(50%, 0px);
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    margin-top: -1px; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+      margin-left: 0%; }
+      body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+        font-weight: bold;
+        padding-right: 0; } }
+@media (max-width: 575px) {
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+    margin-left: -10%; } }
+@media (max-width: 490px) {
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+    margin-left: -10%;
+    min-width: 16rem; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+      font-weight: normal;
+      font-size: 13px;
+      padding-right: 0; } }
+@media (max-width: 415px) {
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+    margin-left: -25%; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+      padding-right: 0; } }
+@media (max-width: 390px) {
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+    margin-left: -30%; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+      padding-right: 0; } }
+@media (max-width: 369px) {
+  body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+    margin-left: -38%; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+      padding-right: 0; } }
+@media (min-width: 358px) {
+  body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg, body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg {
+    display: block; }
+  body header .navbar-caledonia .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm, body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm {
+    display: none; } }
+@media (max-width: 355px) {
+  body header .caledonia-menu .container-fluid-caledonia {
+    padding-left: .1rem; }
+    body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-lg {
+      display: block; }
+    body header .caledonia-menu .container-fluid-caledonia .navbar-brand-caledonia .caledonia-title-sm {
+      display: none; }
+    body header .caledonia-menu .container-fluid-caledonia .navbar-toggler-caledonia {
+      width: 70%; }
+    body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia {
+      width: 100%;
+      transform: translate(0%, 0px); }
+      body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia {
+        margin-left: 0;
+        width: 100%;
+        min-width: 0; }
+        body header .caledonia-menu .container-fluid-caledonia .collapse-caledonia .navbar-nav-caledonia li .dropdown-menu-caledonia a {
+          font-weight: normal;
+          font-size: 13px;
+          padding-left: 7px;
+          padding-right: 0; } }
+/**============================================== HANDLING FOR IMAGE HEADER===============================================*/
+header .bg-caledonia {
+  position: relative; }
+  header .bg-caledonia .bg-img-caledonia {    /**____________An image should resize itself._____________*/
+    width: 100%;
+    height: auto; }
+  header .bg-caledonia .bg-caledonia-content {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 10rem;
+    color: #fff; }
+    header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-services {
+      background-color: #28a745;
+      border-color: #28a745; }
+    header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-contact-us {
+      background-color: transparent;
+      border-color: white !important;
+      text-align: left; }
+    header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-services, header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-contact-us {
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      border-radius: .3rem;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      user-select: none;
+      border: 1px solid transparent;
+      color: #fff; }
+
+@media (max-width: 1200px) {
+  header .bg-caledonia .bg-caledonia-content {
+    margin-bottom: 5rem; } }
+@media (max-width: 810px) {
+  header .bg-caledonia .bg-caledonia-content {
+    margin-bottom: 0rem;
+    right: 5%;
+    left: 5%; } }
+    /**======  2 other sensible responsive changes (text resizing, larger buttons)  ======*/
+@media (max-width: 720px) {
+  header .bg-caledonia .bg-caledonia-content {
+    margin-bottom: 0rem;
+    right: 0%;
+    left: 2%; }
+    header .bg-caledonia .bg-caledonia-content .bg-caledonia-title {  /**first responsive change: text resizing*/
+      font-size: 25px;
+      text-align: center; } 
+      header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-services, header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-contact-us {    /**second responsive change: small button*/
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        border-radius: .2rem; } }
+@media (max-width: 577px) {
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-title {
+    margin: 0;
+    padding: 0; }
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-subtitle {
+    margin: 0 5px 0px 0px;
+    padding: 5px 0; }
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn {
+    margin-left: 20px; }}
+@media (max-width: 450px) {
+  header .bg-caledonia .bg-caledonia-content {
+    padding-bottom: 0; } }
+@media (max-width: 406px) {
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-title {
+    font-size: 20px; }
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-subtitle {
+    font-size: 13px; } }
+@media (max-width: 325px) {
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-title {
+    font-size: 15px; }
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-subtitle {
+    font-size: 10px; }
+  header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-services, header .bg-caledonia .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-contact-us {
+    font-size: 10px; } }
+/**============================================== HANDLING FOR GRID MAIN===============================================*/
+main .grid-container-caledonia {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-top: -5px;
+  background-color: #96caa2; }
+  main .grid-container-caledonia .grid-item {
+    padding: 20px;
+    text-align: center; }
+  main .grid-container-caledonia .grid-item-caledonia-order-img {
+    grid-column: 1 /span 1;
+    grid-row: 1; }
+    main .grid-container-caledonia .grid-item-caledonia-order-img img {
+      width: 100%;
+      height: auto; }
+    main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1290 {
+      display: block; }
+    main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-719 {
+      display: none; }
+  main .grid-container-caledonia .grid-item-order-online {
+    grid-column: 2/ span 2;
+    grid-row: 1; }
+  main .grid-container-caledonia .grid-item-teams {
+    grid-column: 1/ span 1;
+    grid-row: 2; }
+  main .grid-container-caledonia .grid-item-services {
+    grid-column: 2/ span 1;
+    grid-row: 2; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img {
+    grid-column: 3/ span 1;
+    grid-row: 2; }
+    main .grid-container-caledonia .grid-item-caledonia-services-img img {
+      width: 100%;
+      height: auto; }
+    main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1290 {
+      display: block; }
+    main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-719 {
+      display: none; }
+  main .grid-container-caledonia .grid-item-content {
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+    main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+      font-size: 90px; }
+    main .grid-container-caledonia .grid-item-content .bg-caledonia-content .bg-caledonia-btn a:hover {
+      font-weight: bold;
+      background-color: green;
+      color: white;
+      border-color: black; }
+    main .grid-container-caledonia .grid-item-content .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-services, main .grid-container-caledonia .grid-item-content .bg-caledonia-content .bg-caledonia-btn .bg-caledonia-contact-us {
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      border-radius: .3rem;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      user-select: none;
+      border: 1px solid transparent;
+      background-color: transparent;
+      border-color: white !important;
+      color: black; }
+
+@media (max-width: 2100px) {
+  main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+    font-size: 40px; } }
+@media (max-width: 1800px) {
+  main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+    font-size: 20px; } }
+@media (max-width: 1500px) {
+  main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+    display: none; } }
+@media (max-width: 1290px) {
+  main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+    font-size: 60px; }
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1000 {
+    display: block; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1000 {
+    display: block; } }
+@media (max-width: 1000px) {
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-840 {
+    display: block; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-720, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-840 {
+    display: block; } }
+@media (max-width: 840px) {
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-order-img img.img-720 {
+    display: block; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-719 {
+    display: none; }
+  main .grid-container-caledonia .grid-item-caledonia-services-img img.img-720 {
+    display: block; } }
+    /**==========================  browser window is less than 720px in width, 
+          A grid of content should reduce the number of columns used to present the grid items  ==========================*/
+@media (max-width: 720px) {
+  main .grid-container-caledonia {
+    grid-template-columns: auto; }
+    main .grid-container-caledonia .grid-item-content .bg-caledonia-content h1 .symbol {
+      font-size: 60px;
+      display: block; }
+    main .grid-container-caledonia .grid-item-caledonia-order-img {
+      grid-row: 1;
+      grid-column: 1/ span 1; }
+      main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-order-img img.img-720 {
+        display: none; }
+      main .grid-container-caledonia .grid-item-caledonia-order-img img.img-719 {
+        display: block; }
+    main .grid-container-caledonia .grid-item-order-online {
+      grid-row: 2;
+      grid-column: 1/ span 1; }
+    main .grid-container-caledonia .grid-item-teams {
+      grid-row: 3;
+      grid-column: 1/ span 1; }
+    main .grid-container-caledonia .grid-item-services {
+      grid-row: 4;
+      grid-column: 1/ span 1; }
+    main .grid-container-caledonia .grid-item-caledonia-services-img {
+      grid-row: 5;
+      grid-column: 1/ span 1; }
+      main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1290, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-1000, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-840, main .grid-container-caledonia .grid-item-caledonia-services-img img.img-720 {    /**third responsive change: change the picture*/
+        display: none; }
+      main .grid-container-caledonia .grid-item-caledonia-services-img img.img-719 {
+        display: block; } }
+/**============================================== HANDLING FOR FLEXBOX FOOTER===============================================*/
+footer {
+  background-color: #bbebc6;
+  margin-top: -16px;
+  margin-bottom: -16px; }
+  footer .footer-caledonia {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 20px;
+    width: 92%; }
+    footer .footer-caledonia li {
+      width: 32%; }
+      footer .footer-caledonia li .footer-menu {
+        color: black;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 0; }
+      footer .footer-caledonia li .footer-mnu-item-emergency div {
+        font-weight: normal !important; }
+      footer .footer-caledonia li .footer-menu-item {
+        z-index: 2;
+        padding: .5rem 0;
+        margin: .125rem 0 0 1rem;
+        font-size: 1rem;
+        text-align: left;
+        list-style: none;
+        background-clip: padding-box;
+        background-color: transparent; }
+        footer .footer-caledonia li .footer-menu-item div {
+          color: black;
+          display: block;
+          width: 100%;
+          clear: both;
+          text-align: inherit;
+          text-decoration: none;
+          white-space: nowrap;
+          background-color: transparent;
+          border: 0;
+          font-weight: bold;
+          padding-right: 0 !important;
+          font-size: 1rem;
+          list-style: none; }
+        footer .footer-caledonia li .footer-menu-item p {
+          margin-top: 0; }
+        footer .footer-caledonia li .footer-menu-item .email {
+          display: none; }
+        footer .footer-caledonia li .footer-menu-item .email-inline {
+          display: block; }
+  footer .footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #d5ffdf; }
+    footer .footer .float-right {
+      float: right;
+      margin: 0;
+      margin-right: 20px;
+      margin-top: 16px; }
+      footer .footer .float-right a {
+        text-decoration: underline; }
+    footer .footer .privacy-terms {
+      font-weight: 400;
+      margin-left: 20px; }
+      footer .footer .privacy-terms a {
+        text-decoration: underline; }
+
+@media (max-width: 870px) {
+  footer .footer-caledonia li .footer-menu-item .email {
+    display: block; }
+  footer .footer-caledonia li .footer-menu-item .email-inline {
+    display: none; } }
+    /**==========================  browser window is less than 720px in width, 
+          Columns of website content that were previously presented horizontally should be presented vertically  ==========================*/
+@media (max-width: 720px) {
+  footer .footer-caledonia {
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0; }
+    footer .footer-caledonia li {
+      width: 90%;
+      margin-top: 20px; }
+      footer .footer-caledonia li .footer-menu {
+        padding-left: 2.5rem; }
+      footer .footer-caledonia li .footer-menu-item {
+        padding: .5rem 0;
+        font-size: 1rem;
+        text-align: left;
+        list-style: none;
+        background-clip: padding-box;
+        border-radius: .25rem;
+        margin-left: 0%; }
+        footer .footer-caledonia li .footer-menu-item div {
+          display: block;
+          width: 100%;
+          padding: .25rem 2rem;
+          clear: both;
+          text-align: inherit;
+          text-decoration: none;
+          white-space: nowrap;
+          background-color: transparent;
+          border: 0;
+          font-weight: bold;
+          padding-right: 0 !important;
+          font-weight: bold; }
+        footer .footer-caledonia li .footer-menu-item p {
+          padding: .25rem 2rem;
+          padding-right: 0 !important; }
+        footer .footer-caledonia li .footer-menu-item .email {
+          display: none; }
+        footer .footer-caledonia li .footer-menu-item .email-inline {
+          display: block; } }
+
+/*# sourceMappingURL=caledonia.css.map */

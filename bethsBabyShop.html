@@ -1,0 +1,654 @@
+<!--StAuth10244: I Nguyen Duc Long, 000837437 certify that this material is my original work. 
+    No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
+-->
+<!--=========================== Part B: Beth's Baby Shop  ===============================-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Beth's Baby Shop</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" 	integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <style>
+    .container { font-family: cursive; }
+  </style>
+</head>
+
+<body class="pt-5 pb-5">
+
+  <header>
+    <!--Use at least 3 Bootstrap components (First component: navbar component)-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light pt-3 pb-3">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-xs-4 ml-md-0 h1 mt-1 text-primary font-weight-bold mr-md-0 mr-lg-5 mr-0" href="#">Beth's Baby Shop</a>
+        <button class="btn btn-outline-light text-dark m-0 p-0 d-md-none d-block" type="submit"><i class="far fa-heart"></i></button>
+        <button class="btn btn-outline-light text-dark m-0 p-0 d-md-none d-block" type="submit"><i class="fas fa-cart-plus"></i></button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item active ">
+              <a class="nav-link text-dark font-weight-bold mt-2 pr-md-0 pr-lg-2 pr-xl-4 h6 small" aria-current="page" href="#">ACCESSORIES</a>
+            </li>
+            <!--Use at least 3 Bootstrap components (Second component: Dropdowns component)-->
+            <li class="nav-item pr-2 dropdown  font-weight-bold" >
+                <a class="nav-link dropdown-toggle text-dark font-weight-bold  mt-2 pr-md-0 pr-lg-2 pr-xl-4 h6 small" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    FOR BABIES
+                </a>
+                <div class="dropdown-menu position-absolute ml-3 bg-info"  aria-labelledby="navbarDropdown" >
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Bottoms</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Pajamas</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Shorts</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Sweaters</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Tops</a>
+                </div>
+            </li>
+            <li class="nav-item pr-2 dropdown  font-weight-bold" >
+                <a class="nav-link dropdown-toggle text-dark font-weight-bold  mt-2 pr-md-0 pr-lg-2 pr-xl-4 pl-md-0 pl-lg-3 pl-xl-4 h6 small" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    BOYS
+                </a>
+                <div class="dropdown-menu position-absolute ml-3 bg-info"  aria-labelledby="navbarDropdown" >
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Activewear</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Bottoms</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Pajamas</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Sweaters</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Tops &amp; Bodysuits</a>
+                </div>
+            </li>
+            <li class="nav-item pr-2 dropdown  font-weight-bold" >
+                <a class="nav-link dropdown-toggle text-dark font-weight-bold  mt-2 pr-md-0 pr-lg-2 pr-xl-4 pl-md-0 pl-lg-3 pl-xl-4 h6 small" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    GIRLS
+                </a>
+                <div class="dropdown-menu position-absolute ml-3 bg-info"  aria-labelledby="navbarDropdown" >
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Activewear</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Bottoms</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Dresses &amp; Rompers</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Jackets &amp; Outerwear</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Socks &amp; Tights</a>
+                </div>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link text-dark font-weight-bold  mt-2 pr-md-3 pr-lg-2 pr-xl-4 pl-md-0 pl-lg-3 pl-xl-4 h6 small" aria-current="page" href="#">GIFTS</a>
+            </li>
+            <li class="nav-item pr-2 dropdown  font-weight-bold" >
+                <a class="nav-link dropdown-toggle text-dark font-weight-bold  mt-2 pr-md-0 pr-lg-2 pr-xl-4 pl-md-0 pl-lg-3 pl-xl-4 h6 small" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SHOES
+                </a>
+                <div class="dropdown-menu position-absolute ml-3 bg-info "  aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item ml-3 font-weight-bold text-white " href="#">Boy Shoes</a>
+                    <a class="dropdown-item ml-3 font-weight-bold text-white" href="#">Girl Shoes</a>
+                </div>
+            </li>
+          </ul>
+          <button class="btn btn-outline-light text-dark p-md-1 m-md-1 pl-md-0 ml-md-0  m-lg-2 p-lg-2 d-none d-md-block" type="submit"><i class="far fa-heart"></i></button>
+          <button class="btn btn-outline-light text-dark p-md-1 m-md-1 pl-md-0 ml-md-0  m-lg-2 p-lg-2 d-none d-md-block" type="submit"><i class="fas fa-cart-plus"></i></button>
+
+          <form class="navbar-search pull-left d-flex mr-0 pr-0">
+            <input class="form-control mr-2 p-0 m-0 pl-md-1 pl-lg-3 pl-3 search-query" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light text-dark p-0 m-0" type="submit"><i class="fas fa-search text-dark"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Use at least 3 Bootstrap components (Third component: Carousel component)-->
+    <div id="myCarousel" class="carousel slide bg-white mt-4 mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner container-fluid">
+        <div class="carousel-item h-100 active text-center">
+          <picture>
+            <img src="image/babyshop1.jpg" class="img-fluid img-thumbnail">     <!--_________Use a responsive image.________-->
+          </picture>
+        </div>
+        <div class="carousel-item h-100  text-center">
+          <picture>
+            <img src="image/babyshop2.jpg" class="img-fluid img-thumbnail">
+          </picture>
+        </div>
+        <div class="carousel-item h-100  text-center">
+          <picture>
+            <img src="image/babyshop3.jpg" class="img-fluid img-thumbnail">
+          </picture>
+        </div>
+      </div>
+      <div class="ml-xxl-5 pl-xxl-5">
+        <a class="carousel-control-prev ml-md-5 ml-2 ml-xxl-5 pl-xxl-5" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon w-25 h-25 ml-xxl-5 pl-xxl-5" aria-hidden="true"></span>
+            <span class="sr-only mb-5 ml-5 ml-xxl-5 pl-xxl-5">Previous</span>
+        </a>
+      </div>
+      <div class="ml-xxl-5 pl-xxl-5">
+        <a class="carousel-control-next mr-md-5 mr-2 mr-xxl-5 pr-xxl-5" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon w-25 h-25 mr-xxl-5 pr-xxl-5" aria-hidden="true"></span>
+            <span class="sr-only mb-5 ml-5 mr-xxl-5 pr-xxl-5">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="c-home-tabs init effect" id="home-tabs">
+        <div class="container home-tabs-wrap headerFilterIsotope choiceEffect position-relative mb-4 pb-5 pb-xs-1 pb-lg-0 text-center">
+          <div class="moreSettingList" id="moreDetailList">
+
+            
+            <ul class="home-tabs list-unstyled p-0  clear expand pt-2 mt-4 all d-lg-none mr-auto ml-auto mb-0 text-center position-absolute  border border-2 border-secondary rounded-pill w-50 d-block overflow-hidden">
+              <div class="moreSettingIcon d-block d-lg-none position-absolute" more-details-page-demo3="moreDetailList">
+                <i class="fa fa-caret-down"></i>			
+              </div>
+              <li class="pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2 border-2 border-secondary rounded-pill text-center ">
+                <a href="" data-category="filterAll" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden">on-Sale</a>
+              </li>
+            </ul>
+
+
+            <ul class="home-tabs list-unstyled p-0  clear expand pt-2 mt-4 details d-lg-block mr-auto ml-auto mb-0 text-lg-center text-left position-absolute mt-lg-0 ml-lg-0 pl-lg-0 bg-white left-100 row w-100 d-none overflow-hidden border border-2 border-secondary rounded-pill">
+              <div class="moreSettingIcon d-block d-lg-none position-absolute" more-details-page-demo3="moreDetailList">
+                <i class="fa fa-caret-up"></i>			
+              </div>
+              <li class="col-lg-1 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center pl-lg-0 pr-lg-0">
+                <a href="" data-category="filterAll" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden">All</a>
+              </li>
+              <li class="col-lg-2 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center">
+                <a href="" data-category="filterFeatured" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden ml-lg-0 mr-lg-0">featured</a>
+              </li>
+              <li class="col-lg-2 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center ">
+                <a href="" data-category="filterOnSale" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden ml-lg-0 mr-lg-0">on-Sale</a>
+              </li>
+              <li class="col-lg-3 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center">
+                <a href="" data-category="filterBestSellers" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden ml-lg-0 mr-lg-0">best-Sellers</a>
+              </li>
+              <li class="col-lg-1 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center">
+                <a href="" data-category="filterLatest" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden mr-lg-0 pl-lg-0 pr-lg-0">latest</a>
+              </li>
+              <li class="col-lg-1 col-12 pl-md-0 pr-md-0 ml-md-1 mr-md-1 ml-lg-2 mr-lg-1 d-inline-block pt-0 pb-2 pr-2 pl-2  border-2 border-secondary rounded-pill text-center">
+                <a href="" data-category="filterGifts" class="text-uppercase pb-0 mb-0 pt-0 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 ml-sm-1 mr-sm-1 mt-0 mt-lg-1 ml-lg-0 pl-0 pr-0 bg-transparent text-body d-inline-block text-decoration-none font-weight-bold overflow-hidden ml-lg-0 mr-lg-0 pl-lg-0 pr-lg-0">gifts</a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="container marketing pt-lg-5">
+      <!-- Three columns of text below the carousel -->
+      <!--==================== Use Bootstrap's grid feature in the design of your page. ====================-->
+      <div class="row contentFilterIsotope">
+        <div class="col-xs-12 col-md-4 featured pt-5 pb-5"> 
+          <div>
+            <div class="products">
+              <div class="product-item border border-secondary rounded">
+                <div class="product-content text-center">
+                  <a href="#" class="product-pics img-fluid">   <!--_________Use a responsive image.________-->
+                    <img class="product-pic img-fluid img-thumbnail rounded mx-auto d-block " src="image/featured1.jpg">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title ml-4 mr-4 pt-4 pb-4">
+                    <a href="#" class="product-title-link text-dark text-decoration-none font-weight-bold h4">Oshkosh chukka boots</a>
+                  </h3>
+                  <div class="product-price-and-cart">
+                    <div class="product-price pb-3">
+                      <span class="price">
+                        <span class="amount">
+                          <bdi class="ml-4 mr-4 font-weight-bold h2 text-dark">
+                            <span class="price-currencySymbol">$</span>44
+                          </bdi>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="product-cart pt-2 pb-1 mb-4">
+                        <a href="#" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart text-decoration-none ">
+                          <span class="ip-shop-loop-add-text text-dark ml-sm-4 mr-sm-4 ml-3 mr-0 ml-md-2 mr-md-0 ml-lg-4 mr-lg-4 font-weight-bold h5">
+                            <i class="fas fa-cart-arrow-down h3"></i>
+                            <span class="small">Add to cart</span>
+                          </span>
+                        </a>
+                        <a href="#"  class="ip-quickview-btn text-dark product_type_simple text-decoration-none h3 mr-sm-3 ml-sm-3 mr-1 ml-1 mr-md-0 ml-md-0 mr-lg-2 ml-lg-2 d-xl-none" data-tooltipeffect="tooltip" title="QUICK VIEW" data-placement="top">
+                          <i class="fas fa-eye h5"></i>
+                        </a>
+                        <a href="#" class="ip-wishlist-btn text-dark text-decoration-none text-decoration-none h3 ml-sm-3 ml-1 ml-md-0 ml-lg-2 d-xl-none " data-tooltipeffect="tooltip" title="WISHLIST" data-placement="top">
+                          <i class="far fa-heart h4"></i>
+                          <i class="fas fa-heart h4 d-none"></i>
+                        </a>				
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-xs-12 col-md-4 on-Sale pt-5 pb-5">
+          <div>
+            <div class="products">
+              <div class="product-item border border-secondary rounded">
+                <div class="product-content text-center">
+                  <a href="#" class="product-pics img-fluid">
+                    <img class="product-pic img-fluid img-thumbnail rounded mx-auto d-block " src="image/on-Sale1.jpg">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title ml-4 mr-4 pt-4 pb-4">
+                    <a href="#" class="product-title-link text-dark text-decoration-none font-weight-bold h4">2-pocket denim bodysuit</a>
+                  </h3>
+                  <div class="product-price-and-cart">
+                    <div class="product-price pb-3">
+                      <span class="price">
+                        <span class="amount">
+                          <bdi class="ml-4 mr-4 font-weight-bold h2">
+                            <span class="price-currencySymbol">$</span>10
+                          </bdi>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="product-cart pt-2 pb-1 mb-4">
+                        <a href="#" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart text-decoration-none ">
+                          <span class="ip-shop-loop-add-text text-dark ml-sm-4 mr-sm-4 ml-3 mr-0 ml-md-2 mr-md-0 ml-lg-4 mr-lg-4 font-weight-bold h5">
+                            <i class="fas fa-cart-arrow-down h3"></i>
+                            <span class="small">Add to cart</span>
+                          </span>
+                        </a>
+                        <a href="#"  class="ip-quickview-btn text-dark product_type_simple text-decoration-none h3 mr-sm-3 ml-sm-3 mr-1 ml-1 mr-md-0 ml-md-0 mr-lg-2 ml-lg-2 d-xl-none  " data-tooltipeffect="tooltip" title="QUICK VIEW" data-placement="top">
+                          <i class="fas fa-eye h5"></i>
+                        </a>
+                        <a href="#" class="ip-wishlist-btn text-dark text-decoration-none text-decoration-none h3 ml-sm-3 ml-1 ml-md-0 ml-lg-2 d-xl-none " data-tooltipeffect="tooltip" title="WISHLIST" data-placement="top">
+                          <i class="far fa-heart h4"></i>
+                          <i class="fas fa-heart h4 d-none"></i>
+                        </a>				
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-xs-12 col-md-4 best-Sellers pt-5 pb-5">
+          <div>
+            <div class="products">
+              <div class="product-item border border-secondary rounded">
+                <div class="product-content text-center">
+                  <a href="#" class="product-pics img-fluid">
+                    <img class="product-pic img-fluid img-thumbnail rounded mx-auto d-block " src="image/best-Sellers1.jpg">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title ml-4 mr-4 pt-4 pb-4">
+                    <a href="#" class="product-title-link text-dark text-decoration-none font-weight-bold h4">French terry shawl collar cardigan</a>
+                  </h3>
+                  <div class="product-price-and-cart">
+                    <div class="product-price pb-3">
+                      <span class="price">
+                        <span class="amount">
+                          <bdi class="ml-4 mr-4 font-weight-bold h2">
+                            <span class="price-currencySymbol">$</span>23
+                          </bdi>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="product-cart pt-2 pb-1 mb-4">
+                        <a href="#" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart text-decoration-none ">
+                          <span class="ip-shop-loop-add-text text-dark ml-sm-4 mr-sm-4 ml-3 mr-0 ml-md-2 mr-md-0 ml-lg-4 mr-lg-4 font-weight-bold h5">
+                            <i class="fas fa-cart-arrow-down h3"></i>
+                            <span class="small">Add to cart</span>
+                          </span>
+                        </a>
+                        <a href="#"  class="ip-quickview-btn text-dark product_type_simple text-decoration-none h3 mr-sm-3 ml-sm-3 mr-1 ml-1 mr-md-0 ml-md-0 mr-lg-2 ml-lg-2 d-xl-none  " data-tooltipeffect="tooltip" title="QUICK VIEW" data-placement="top">
+                          <i class="fas fa-eye h5"></i>
+                        </a>
+                        <a href="#" class="ip-wishlist-btn text-dark text-decoration-none text-decoration-none h3 ml-sm-3 ml-1 ml-md-0 ml-lg-2 d-xl-none " data-tooltipeffect="tooltip" title="WISHLIST" data-placement="top">
+                          <i class="far fa-heart h4"></i>
+                          <i class="fas fa-heart h4 d-none"></i>
+                        </a>				
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-xs-12 col-md-4 latest pt-5 pb-5">
+          <div>
+            <div class="products">
+              <div class="product-item border border-secondary rounded">
+                <div class="product-content text-center">
+                  <a href="#" class="product-pics img-fluid">
+                    <img class="product-pic img-fluid img-thumbnail rounded mx-auto d-block " src="image/latest1.jpg">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title ml-4 mr-4 pt-4 pb-4">
+                    <a href="#" class="product-title-link text-dark text-decoration-none font-weight-bold h4">Stride rite str tulip sandal</a>
+                  </h3>
+                  <div class="product-price-and-cart">
+                    <div class="product-price pb-3">
+                      <span class="price">
+                        <span class="amount">
+                          <bdi class="ml-4 mr-4 font-weight-bold h2">
+                            <span class="price-currencySymbol">$</span>48
+                          </bdi>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="product-cart pt-2 pb-1 mb-4">
+                        <a href="#" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart text-decoration-none ">
+                          <span class="ip-shop-loop-add-text text-dark ml-sm-4 mr-sm-4 ml-3 mr-0 ml-md-2 mr-md-0 ml-lg-4 mr-lg-4 font-weight-bold h5">
+                            <i class="fas fa-cart-arrow-down h3"></i>
+                            <span class="small">Add to cart</span>
+                          </span>
+                        </a>
+                        <a href="#"  class="ip-quickview-btn text-dark product_type_simple text-decoration-none h3 mr-sm-3 ml-sm-3 mr-1 ml-1 mr-md-0 ml-md-0 mr-lg-2 ml-lg-2 d-xl-none  " data-tooltipeffect="tooltip" title="QUICK VIEW" data-placement="top">
+                          <i class="fas fa-eye h5"></i>
+                        </a>
+                        <a href="#" class="ip-wishlist-btn text-dark text-decoration-none text-decoration-none h3 ml-sm-3 ml-1 ml-md-0 ml-lg-2 d-xl-none " data-tooltipeffect="tooltip" title="WISHLIST" data-placement="top">
+                          <i class="far fa-heart h4"></i>
+                          <i class="fas fa-heart h4 d-none"></i>
+                        </a>				
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+
+        <div class="col-xs-12 col-md-4 gifts pt-5 pb-5">
+          <div>
+            <div class="products ">
+              <div class="product-item border border-secondary rounded">
+                <div class="product-content text-center">
+                  <a href="#" class="product-pics img-fluid">
+                    <img class="product-pic img-fluid img-thumbnail rounded mx-auto d-block " src="image/gifts.jpg">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <h3 class="product-title ml-4 mr-4 pt-4 pb-4">
+                    <a href="#" class="product-title-link text-dark text-decoration-none font-weight-bold h4">2-piece neon striped dress</a>
+                  </h3>
+                  <div class="product-price-and-cart">
+                    <div class="product-price pb-3">
+                      <span class="price">
+                        <span class="amount">
+                          <bdi class="ml-4 mr-4 font-weight-bold h2">
+                            <span class="price-currencySymbol">$</span>13
+                          </bdi>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="product-cart pt-2 pb-1 mb-4">
+                        <a href="#" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart text-decoration-none ">
+                          <span class="ip-shop-loop-add-text text-dark ml-sm-4 mr-sm-4 ml-3 mr-0 ml-md-2 mr-md-0 ml-lg-4 mr-lg-4 font-weight-bold h5">
+                            <i class="fas fa-cart-arrow-down h3"></i>
+                            <span class="small">Add to cart</span>
+                          </span>
+                        </a>
+                        <a href="#"  class="ip-quickview-btn text-dark product_type_simple text-decoration-none h3 mr-sm-3 ml-sm-3 mr-1 ml-1 mr-md-0 ml-md-0 mr-lg-2 ml-lg-2 d-xl-none  " data-tooltipeffect="tooltip" title="QUICK VIEW" data-placement="top">
+                          <i class="fas fa-eye h5"></i>
+                        </a>
+                        <a href="#" class="ip-wishlist-btn text-dark text-decoration-none text-decoration-none h3 ml-sm-3 ml-1 ml-md-0 ml-lg-2 d-xl-none " data-tooltipeffect="tooltip" title="WISHLIST" data-placement="top">
+                          <i class="far fa-heart h4"></i>
+                          <i class="fas fa-heart h4 d-none"></i>
+                        </a>				
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+      </div><!-- /.row -->
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider mt-5 mb-5 mr-0 ml-0">
+    </div><!-- /.container -->
+
+    <div class="container">
+      <div class="row">   <!--________Use a responsive table.__________-->
+        <table class="table table-striped table-inverse table-responsive table-hover table-sm caption-top">
+          <caption class="text-center">Discount Codes</caption>
+          <thead class="thead-inverse">
+            <tr>
+              <th scope="col"><div class="d-block d-sm-none">Celeb date</div> <div class="d-none d-sm-block">Celebration date</div> </th>
+              <th scope="col">Discount Code</th>
+              <th scope="col">Issue date</th>
+              <th scope="col">Expiry date</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">New Year</td>
+                <td>BETH<script> document.write(new Date().getFullYear()); </script></td>
+                <td>Dec 30 <script> document.write((new Date().getFullYear())-1); </script></td>
+                <td>Jan 05 <script> document.write(new Date().getFullYear()); </script></td>
+              </tr>
+              <tr>
+                <td scope="row">Valentine Day</td>
+                <td>BETHVA<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Feb 08 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Feb 20 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Women Day</td>
+                <td>BETHWD<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Mar 02 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Mar 15 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Easter</td>
+                <td>BETHEA<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Apr 01 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Apr 30 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Family Day</td>
+                <td>BETHFD<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>May 10 <script> document.write(new Date().getFullYear());</script></td>
+                <td>May 19 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Victoria Day</td>
+                <td>BETHVD<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>May 20 <script> document.write(new Date().getFullYear());</script></td>
+                <td>May 30 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Canada Day</td>
+                <td>BETHCA<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Jun 25 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Jul 05 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Labour Day</td>
+                <td>BETHLA<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Aug 26 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Sep 10 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Thanksgiving</td>
+                <td>BETHTG<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Oct 01 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Oct 15 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Halloween</td>
+                <td>BETHHW<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Oct 25 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Nov 05 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Remembrance Day</td>
+                <td>BETHRD<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Nov 25 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Nov 15 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Christmas Day</td>
+                <td>BETHCD<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Dec 10 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Dec 25 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+              <tr>
+                <td scope="row">Boxing Day</td>
+                <td>BETHBX<script> document.write((new Date().getFullYear())-2000);</script></td>
+                <td>Dec 26 <script> document.write(new Date().getFullYear());</script></td>
+                <td>Dec 28 <script> document.write(new Date().getFullYear());</script></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!--==================== Use Bootstrap's grid feature in the design of your page. ====================-->
+    <div class="container mt-4">
+      <div class="row"> 
+        <div class="col-md-4 col-sm-6 col-12 pl-sm-3 pr-sm-3 pl-1 pr-0 mt-3 mb-3 mt-md-0 mb-md-0 contact-us ml-4 ml-sm-0">
+          <div id="text-4 pr-lg-3" class="widget widget_text">
+            <h4>CONTACT US</h4>			
+            <div class="textwidget"><p>135 Fennell Ave West<br>
+              Hamilton, Ontario L9C 0E5<br>
+              Phone: (905) 575-1212<br>
+              Email: info@bethshop.ca</p>
+            </div>
+          </div>
+          <div id="text-5 pl-lg-3 " class="widget widget_text d-none d-sm-block d-md-none">
+            <h4>CUSTOMER SERVICES</h4>			
+            <ul class="column column-4" data-v-edit-region="Link List 4">
+              <li><a href="#" title="Help Desk" class="text-decoration-underline text-info">Help / FAQ</a></li>
+              <li><a href="#" title="Shipping Policy" target="_blank"  class="text-decoration-underline text-info">Shipping  Guide</a></li>
+              <li><a href="#" title="Returns &amp; Exchanges"  class="text-decoration-underline text-info">Returns &amp; Exchanges</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 pl-sm-3 pr-sm-3 pl-1 pr-0 mt-3 mb-3 mt-md-0 mb-md-0 location-hours  ml-4 ml-sm-0">
+          <div id="text-5 pr-lg-3 pl-lg-3" class="widget widget_text">
+            <h4>LOCATION HOURS</h4>			
+            <div class="textwidget"><p>Mon: 8:00am – 5:00pm<br>
+              Tue: 8:00am – 5:00pm<br>
+              Wed: 8:00am – 5:00pm<br>
+              Thu: 8:00am – 5:00pm<br>
+              Fri: 8:00am – 5:00pm<br>
+              Sat: 8:00am – 12:30pm<br>
+              Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 pl-sm-3 pr-sm-3 pl-1 pr-0 mt-3 mb-3 mt-md-0 mb-md-0 customer-services d-block d-sm-none d-md-block  ml-4 ml-sm-0">
+          <div id="text-5 pl-lg-3" class="widget widget_text">
+            <h4>CUSTOMER SERVICES</h4>			
+            <ul class="column column-4" data-v-edit-region="Link List 4">
+              <li><a href="#" title="Help Desk" class="text-decoration-underline text-info">Help / FAQ</a></li>
+              <li><a href="#" title="Shipping Policy" target="_blank"  class="text-decoration-underline text-info">Shipping  Guide</a></li>
+              <li><a href="#" title="Returns &amp; Exchanges"  class="text-decoration-underline text-info">Returns &amp; Exchanges</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container text-dark">
+      <p class="float-right"><a href="#" class="text-decoration-underline text-info cursor-pointer">Back to top</a></p>
+      <p class="privacy-terms font-weight-normal">&copy; <script> document.write((new Date().getFullYear())-5); </script>-<script> document.write(new Date().getFullYear()); </script> Company, Inc. &middot; <a href="#" class="text-decoration-underline text-info cursor-pointer">Privacy</a> &middot; <a href="#" class="text-decoration-underline text-info cursor-pointer">Terms</a></p>
+    </footer>
+  </main>
+  <script>
+    $(function() {
+      $(".dropdown-menu").css({"top": "40px","right": "5%","left": "12%", "min-width": "12.3rem"});
+      $(".home-tabs.details").css({"z-index": "100"});
+      $(".home-tabs.all .moreSettingIcon").css({"right": "10%","top": "8px"});
+      $(".home-tabs.details .moreSettingIcon").css({"left": "70%","top": "8px"});
+      $(".contentFilterIsotope").isotope({ itemSelector: ".col-md-4" });
+      $(".headerFilterIsotope ul li a").click(function(event) {
+        $(".moreSettingList ul.all").removeClass('d-none');
+        $(".moreSettingList ul.all").addClass('d-block');
+        $(".moreSettingList ul.details").removeClass('d-block');
+        $(".moreSettingList ul.details").addClass('d-none');
+        $(".moreSettingList ul.all li a").text(this.text);
+        var danhMucFilter = $(this).data('category');
+        var nameCategory = $(this).text();
+        if (danhMucFilter == "filterAll")
+          $(".contentFilterIsotope").isotope({ filter:"*"});
+        else
+          $(".contentFilterIsotope").isotope({ filter: "."+nameCategory});
+        return false;
+      });
+      $(".headerFilterIsotope ul li").click(function(event) {
+        $(".moreSettingList ul.all").removeClass('d-none');
+        $(".moreSettingList ul.all").addClass('d-block');
+        $(".moreSettingList ul.details").removeClass('d-block');
+        $(".moreSettingList ul.details").addClass('d-none');
+        $(".moreSettingList ul.all li a").text(this.text);
+      });
+
+      $(".moreSettingList ul.all").click(function(event) {
+        $(".moreSettingList ul.all").removeClass('d-block');
+        $(".moreSettingList ul.all").addClass('d-none');
+        $(".moreSettingList ul.details").removeClass('d-none');
+        $(".moreSettingList ul.details").addClass('d-block');
+      });
+      $(".moreSettingList ul.all li a").click(function(event) {
+        $(".moreSettingList ul.all").removeClass('d-block');
+        $(".moreSettingList ul.all").addClass('d-none');
+        $(".moreSettingList ul.details").removeClass('d-none');
+        $(".moreSettingList ul.details").addClass('d-block');
+      });
+      $(".border.border-secondary.rounded").hover(function() {
+        $(this).parent().addClass("shadow-lg")
+        $(this).children().next().children().next().children().next().children().next().next().removeClass("d-xl-none");
+        $(this).children().next().children().next().children().next().children().next().removeClass("d-xl-none");
+      }, function() {
+        $(this).parent().removeClass("shadow-lg")
+        $(this).children().next().children().next().children().next().children().next().next().addClass("d-xl-none");
+        $(this).children().next().children().next().children().next().children().next().addClass("d-xl-none");
+      });
+
+      $(".product-cart .far.fa-heart").click(function(e) {
+        $(this).addClass("d-none");
+        $(this).next().removeClass("d-none");
+      })
+      $(".product-cart .fas.fa-heart").click(function(e) {
+        $(this).addClass("d-none");
+        $(this).prev().removeClass("d-none");
+      })
+
+      $("a.button.product_type_simple").click((e) => e.preventDefault())
+      $("a.ip-quickview-btn.product_type_simple").click((e) => e.preventDefault())
+      $("a.ip-wishlist-btn").click((e) => e.preventDefault())
+    });
+  </script>
+</body>
+</html>
